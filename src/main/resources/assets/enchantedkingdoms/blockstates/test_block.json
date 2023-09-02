@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "enchantedkingdoms:block/test_block"
+    }
+  }
+}

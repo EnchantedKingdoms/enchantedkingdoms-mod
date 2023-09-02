@@ -12,6 +12,10 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
+import pl.enchantedkingdoms.block.ModBlocks;
+import pl.enchantedkingdoms.block.ModBlocksCreativeTabs;
+import pl.enchantedkingdoms.item.ModItemsCreativeTabs;
+import pl.enchantedkingdoms.item.ModItems;
 
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(EnchantedKingdoms.MOD_ID)
@@ -23,6 +27,12 @@ public class EnchantedKingdoms
     public EnchantedKingdoms()
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+
+        ModItemsCreativeTabs.register(modEventBus);
+        ModBlocksCreativeTabs.register(modEventBus);
+
+        ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
