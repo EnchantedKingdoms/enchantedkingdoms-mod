@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "enchantedkingdoms:block/black_crystal_block"
+  }
+}

@@ -16,10 +16,12 @@ public class ModBlocksCreativeTabs {
 
     public static final RegistryObject<CreativeModeTab> ENCHANTED_KINGDOMS_BLOCKS_TAB = CREATIVE_MODE_TABS.register("enchantedkingdoms_blocks_tab",
             () -> CreativeModeTab.builder()
-                    .icon(() -> new ItemStack(ModItems.TEST_ITEM.get()))
+                    .icon(() -> new ItemStack(ModBlocks.TEST_BLOCK.get()))
                     .title(Component.translatable("creativetab.enchantedkingdoms_blocks_tab"))
                     .displayItems((pParameters, pOutput) -> {
                         pOutput.accept(ModBlocks.TEST_BLOCK.get());
+                        pOutput.accept(ModBlocks.BLACK_CRYSTAL_ORE.get());
+                        pOutput.accept(ModBlocks.BLACK_CRYSTAL_BLOCK.get());
                     })
                     .build());
 

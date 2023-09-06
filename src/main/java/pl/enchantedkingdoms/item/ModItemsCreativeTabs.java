@@ -19,16 +19,11 @@ public class ModItemsCreativeTabs {
                     .title(Component.translatable("creativetab.enchantedkingdoms_items_tab"))
                     .displayItems((pParameters, pOutput) -> {
                         pOutput.accept(ModItems.TEST_ITEM.get());
-                    })
-                    .build());
-
-
-    public static final RegistryObject<CreativeModeTab> ENCHANTED_KINGDOMS_BLOCKS_TAB = CREATIVE_MODE_TABS.register("enchantedkingdoms_blocks_tab",
-            () -> CreativeModeTab.builder()
-                    .icon(() -> new ItemStack(ModItems.TEST_ITEM.get()))
-                    .title(Component.translatable("creativetab.enchantedkingdoms_blocks_tab"))
-                    .displayItems((pParameters, pOutput) -> {
-                        pOutput.accept(ModItems.TEST_ITEM.get());
+                        pOutput.accept(ModItems.BLACK_CRYSTAL.get());
+                        pOutput.accept(ModItems.BLACK_BLADE.get());
+                        pOutput.accept(ModItems.BLACK_PICKAXE.get());
+                        pOutput.accept(ModItems.BLACK_STAFF.get());
+                        pOutput.accept(ModItems.SUN_PICKAXE.get());
                     })
                     .build());
 

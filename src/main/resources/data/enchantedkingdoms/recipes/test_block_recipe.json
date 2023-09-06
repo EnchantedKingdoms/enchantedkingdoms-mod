@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "enchantedkingdoms:test_item"
+    }
+  },
+  "result": {
+    "item": "enchantedkingdoms:test_block",
+    "count": 1
+  }
+}

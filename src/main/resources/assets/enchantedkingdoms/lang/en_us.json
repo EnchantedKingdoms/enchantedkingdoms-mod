@@ -2,6 +2,15 @@
   "item.enchantedkingdoms.test_item": "Test Item",
   "block.enchantedkingdoms.test_block": "Test Block",
 
+  "item.enchantedkingdoms.black_crystal": "Black crystal",
+  "block.enchantedkingdoms.black_crystal_block": "Black crystal block",
+  "block.enchantedkingdoms.black_crystal_ore": "Black crystal ore",
+
+  "item.enchantedkingdoms.black_blade": "Black blade",
+  "item.enchantedkingdoms.black_staff": "Black staff",
+  "item.enchantedkingdoms.black_pickaxe": "Black pickaxe",
+  "item.enchantedkingdoms.sun_pickaxe": "Sun pickaxe",
+
   "creativetab.enchantedkingdoms_items_tab": "EnchantedKingdoms Items",
   "creativetab.enchantedkingdoms_blocks_tab": "EnchantedKingdoms Blocks"
 }
