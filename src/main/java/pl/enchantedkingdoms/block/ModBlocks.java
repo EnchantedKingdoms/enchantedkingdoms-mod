@@ -23,7 +23,7 @@ public class ModBlocks {
             DeferredRegister.create(ForgeRegistries.BLOCKS, EnchantedKingdoms.MOD_ID);
 
     public static final RegistryObject<Block> TEST_BLOCK = registerBlock("test_block",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
+            () -> new TestBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
 
     public static final RegistryObject<Block> BLACK_CRYSTAL_ORE = registerBlock("black_crystal_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.EMERALD_ORE)

@@ -25,18 +25,17 @@ public class TestItem extends Item {
         BlockPos positionClicked = pContext.getClickedPos();
         Player player = pContext.getPlayer();
         boolean foundBlock = false;
+        pContext.getItemInHand().hurtAndBreak(1, pContext.getPlayer(), p -> p.broadcastBreakEvent(p.getUsedItemHand()));
         for(int i = 0; i <= positionClicked.getY() + 64; i++){
             BlockState state = pContext.getLevel().getBlockState(positionClicked.below(i));
 
             if(isValuableBlock(state)){
                 player.sendSystemMessage(Component.literal("Found valuable ore!"));
-                pContext.getItemInHand().hurtAndBreak(1, pContext.getPlayer(), p -> p.broadcastBreakEvent(p.getUsedItemHand()));
                 return InteractionResult.SUCCESS;
             }
         }
 
         player.sendSystemMessage(Component.literal("Not valuable ore found!"));
-        pContext.getItemInHand().hurtAndBreak(1, pContext.getPlayer(), p -> p.broadcastBreakEvent(p.getUsedItemHand()));
         return InteractionResult.SUCCESS;
     }
 
