@@ -12,5 +12,7 @@
   "item.enchantedkingdoms.sun_pickaxe": "Sun pickaxe",
 
   "creativetab.enchantedkingdoms_items_tab": "EnchantedKingdoms Items",
-  "creativetab.enchantedkingdoms_blocks_tab": "EnchantedKingdoms Blocks"
+  "creativetab.enchantedkingdoms_blocks_tab": "EnchantedKingdoms Blocks",
+  "key.category.enchantedkingdoms.enchantedkingdoms": "EnchantedKingdoms Keys",
+  "key.enchantedkingdoms.show_cash": "Show cash"
 }

@@ -16,6 +16,7 @@ import pl.enchantedkingdoms.block.ModBlocks;
 import pl.enchantedkingdoms.block.ModBlocksCreativeTabs;
 import pl.enchantedkingdoms.item.ModItemsCreativeTabs;
 import pl.enchantedkingdoms.item.ModItems;
+import pl.enchantedkingdoms.networking.ModMessages;
 
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(EnchantedKingdoms.MOD_ID)
@@ -43,6 +44,7 @@ public class EnchantedKingdoms
     private void commonSetup(final FMLCommonSetupEvent event)
     {
 
+        ModMessages.register();
     }
 
     // Add the example block item to the building blocks tab
